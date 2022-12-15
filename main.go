@@ -10,7 +10,7 @@ func echoFunction(w http.ResponseWriter, г *http.Request) {
 	fmt.Fprint(w, "Hello, Geekbrains")
 }
 
-func main () { 
+func main () {
 	http.HandleFunc("/", echoFunction)
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, г *http.Request) {
